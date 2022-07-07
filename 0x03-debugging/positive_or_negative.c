@@ -1,38 +1,20 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-#include "main.h"
 
 /**
- * print_to_98 - Check main
- * @n: A input integer
- * Description: function that prints all natural numbers
- * from n to 98, followed by a new line.
- * Return: Nothing
+ * main - Prints a random number and states whether
+ * it is positive, negative, or zero.
+ * eturn: Always 0.
  */
-
-void positive_or_negative(int n)
+int positive_or_negative(int n)
 {
-	if (n <= 98)
-	{
-		for (; n <= 98; n++)
-		{
-			printf("%d", n);
-
-			if (n == 98)
-				continue;
-			printf(",");
-		}
-		printf("\n");
-	}
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
 	else
-	{
-		for (; n >= 98; n--)
-		{
-			printf("%d", n);
+		printf("%d is zero\n", n);
 
-			if (n == 98)
-				continue;
-			printf(", ");
-		}
-		printf("\n");
-	}
+	return (0);
 }
