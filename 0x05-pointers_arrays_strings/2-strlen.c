@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _stlen - Return the length of a string
+ * _strlen - Return the length of a string
  * @str: The string to grt the length of
- * Return: The length of the string
+ * Return: The string to get the length of.
  */
 size_t _strlen(const char *str)
 {
