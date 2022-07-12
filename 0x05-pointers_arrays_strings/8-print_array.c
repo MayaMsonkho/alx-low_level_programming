@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h> 
+#include <stdio.h>
 
 /**
  * print_array - Prints an inputted number of elements
@@ -19,7 +19,7 @@ void print_array(int *a, int n)
 		if (index == n - 1)
 			continue;
 
-		printf(",");
+		printf(", ");
 	}
 
 	printf("\n");
